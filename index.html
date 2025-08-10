@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Montamos sua Festa - Tudo em 1</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #fff8f0;
+        color: #333;
+      }
+      header {
+        background-image: linear-gradient(to right, #FCF4C9, #FEE3E2, #FBCDF2, #E8BEFA, #ABBFFF, #BBF3C0);
+        color: #333;
+        text-align: center;
+        padding: 2rem 1rem;
+      }
+      section {
+        padding: 2rem;
+      }
+      .produtos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        justify-content: center;
+      }
+      .item {
+        background: white;
+        border: 1px solid #ddd;
+        border-radius: 16px;
+        padding: 1rem;
+        width: 250px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .item:hover {
+        transform: scale(1.03);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      }
+      #home, #g, #m, #p, #pp {
+        display: none;
+        min-height: 100vh;
+        flex-direction: column;
+      }
+      body:not(:target) #home,
+      body:target:not(#g):not(#m):not(#p):not(#pp) #home {
+        display: flex;
+      }
+      #g:target, #m:target, #p:target, #pp:target {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 2rem;
+        text-align: center;
+        background-color: #fffacd; /* amarelinho bem clarinho */
+      }
+      .detalhe img {
+        max-width: 300px;
+        height: auto;
+        margin-bottom: 1rem;
+      }
+      .voltar {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: #ff6f00;
+        font-weight: bold;
+        border: 2px solid #ff6f00;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        transition: background-color 0.3s, color 0.3s;
+      }
+      .voltar:hover {
+        background-color: #ff6f00;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Página inicial -->
+    <div id="home">
+      <header>
+        <h1>Aurora Party Festas</h1>
+        <p>Aluguel de decoração de festas</p>
+      </header>
+
+      <section>
+        <h2 style="text-align:center;">Nossos Diferenciais</h2>
+        <div class="produtos">
+          <a href="#g" class="item">
+            <h3>Festa Tamanho G</h3>
+            <p>Pacote completo para grandes eventos. Ideal para 80+ convidados.</p>
+          </a>
+          <a href="#m" class="item">
+            <h3>Festa Tamanho M</h3>
+            <p>Perfeito para festas médias. Atende até 50.</p>
+          </a>
+          <a href="#p" class="item">
+            <h3>Festa Tamanho P</h3>
+            <p>Pacote prático para celebrações pequenas.</p>
+          </a>
+          <a href="#pp" class="item">
+            <h3>Festa Tamanho PP</h3>
+            <p>Compacto, ideal para mini festas.</p>
+          </a>
+        </div>
+      </section>
+
+      <section>
+        <h2 style="text-align:center;">Entre em Contato</h2>
+        <p style="text-align:center;">
+          WhatsApp: (19) 98175-8244 | 
+          Instagram: 
+          <a href="https://instagram.com/aurorapartyfestas" 
+             target="_blank" 
+             style="color:#ff6f00; font-weight:bold; text-decoration:none;">
+            @aurorapartyfestas
+          </a>
+        </p>
+      </section>
+
+      <footer>
+        <p>&copy; 2025 Montamos Seu Site. Todos os direitos reservados.</p>
+      </footer>
+    </div>
+
+    <!-- Página G -->
+    <div id="g" class="detalhe">
+      <h2>Festa Tamanho G</h2>
+      <img src="WhatsApp%20Image%202025-08-09%20at%2019.36.41.png" alt="Balões de festa G">
+      <img src="WhatsApp%20Image%202025-08-09%20at%2019.36.42.png" alt="Decoração extra festa G">
+      <p>
+        Transforme sua celebração em um evento inesquecível!<br>
+        A Festa Tamanho G é pensada para quem deseja receber muitos convidados com estilo, conforto e praticidade. 
+        Com uma decoração impecável, elementos que encantam desde a entrada até a mesa principal, e um ambiente acolhedor, 
+        garantimos que cada detalhe seja perfeito.
+      </p>
+      <p>
+        Perfeita para aniversários, confraternizações e grandes comemorações, oferecendo harmonia e sofisticação para que você 
+        aproveite ao máximo — sem preocupações.
+      </p>
+      <p>✨ <strong>Mais beleza. Mais memórias.</strong><br>
+        Com a Festa Tamanho G, sua única tarefa será celebrar.</p>
+      <a href="#home" class="voltar">Voltar para a página principal</a>
+    </div>
+
+    <!-- Página M -->
+    <div id="m" class="detalhe">
+      <h2>Festa Tamanho M</h2>
+      <p>Celebre com charme e praticidade!
+        A Festa Tamanho M é perfeita para quem deseja reunir amigos e familiares em um ambiente aconchegante e bem decorado.
+        Com o equilíbrio ideal entre beleza e funcionalidade, cada detalhe é pensado para transformar sua comemoração em um momento especial.
+
+        Ideal para aniversários, encontros e celebrações de médio porte, oferecendo um toque de sofisticação sem abrir mão do conforto.
+
+        ✨ Mais estilo, menos preocupações.
+        Na Festa Tamanho M, você só precisa se preocupar com o mais importante: aproveitar cada segundo.</p>
+      <a href="#home" class="voltar">Voltar para a página principal</a>
+    </div>
+
+    <!-- Página P -->
+    <div id="p" class="detalhe">
+      <img src="WhatsApp%20Image%202025-08-09%20at%2019.36.41.jpeg" alt="Balões de festa P">
+      <h2>Festa Tamanho P</h2>
+      <p>🎈 Festa Tamanho P
+        O charme das pequenas comemorações!
+        A Festa Tamanho P é a escolha ideal para quem deseja celebrar de forma intimista, mas sem abrir mão de uma decoração linda e acolhedora.
+        Pensada para até 30 pessoas, cada detalhe é planejado para criar um clima caloroso e inesquecível.
+
+        Perfeita para aniversários, mini-chás, reuniões familiares ou qualquer ocasião especial que mereça um toque de beleza.
+
+        ✨ Pequena no tamanho, gigante no significado.
+        Na Festa Tamanho P, cada momento é especial.</p>
+      <a href="#home" class="voltar">Voltar para a página principal</a>
+    </div>
+
+    <!-- Página PP -->
+    <div id="pp" class="detalhe">
+      <img src="WhatsApp%20Image%202025-08-09%20at%2019.36.42.jpeg" alt="Balões de festa PP">
+      <h2>Festa Tamanho PP</h2>
+      <p>🎀 Festa Tamanho PP
+        Encanto na medida certa!
+        A Festa Tamanho PP foi criada para quem deseja comemorar com simplicidade, mas cercado de carinho e estilo.
+        Com uma decoração delicada e funcional, é perfeita para mini-festas, surpresas e celebrações rápidas que merecem ser lembradas.
+
+        Ideal para até 15 pessoas, proporcionando um ambiente leve e acolhedor.
+
+        ✨ O essencial para criar memórias únicas.
+        Na Festa Tamanho PP, menos é mais — e cada detalhe importa.</p>
+      <a href="#home" class="voltar">Voltar para a página principal</a>
+    </div>
+
+  </body>
+</html>
+
